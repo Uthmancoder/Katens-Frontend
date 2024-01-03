@@ -154,7 +154,6 @@ const ShowingPosts = () => {
       const response = await axios.post("http://localhost:5100/Api/Comments/postReply", ReplyToCommentData)
       console.log(response.data)
       toast.success("Reply posted successfully")
-      console.log(`Reply submitted for comment ID ${editingCommentId}: ${replyText}`);
     } catch (error) {
       console.log("Error posting reply for comment", error);
       toast.error("Failed to post reply. Please try again later.");
