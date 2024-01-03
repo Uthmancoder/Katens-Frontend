@@ -23,6 +23,8 @@ const ShowingPosts = () => {
   const [editingCommentId, setEditingCommentId] = useState(null);
   const [replyText, setReplyText] = useState('');
 
+  const currentlyLoggedUser = localStorage.getItem("Username");
+
   // Scroll to the top when the component is mounted
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -130,21 +132,37 @@ const ShowingPosts = () => {
       }
     }
   };
-  // const replyToComment = (id) => {
-  //   console.log(id)
-  //   if (editingCommentId === id) {
-  //     setEditingCommentId(null);
-  //   }
-  // }
-  const handleReply = () => {
-    // Handle the submission of the reply here.
-    // You can use the 'replyText' state to access the reply content.
-    console.log(`Reply submitted for comment ID ${editingCommentId}: ${replyText}`);
-    
 
-    // Reset the reply input field and editingCommentId
-    setReplyText('');
-    setEditingCommentId(null);
+  const handleReply = async () => {
+    if (!currentlyLoggedUser) {
+      toast.warning("Action not allowed. Considered Logging in!");
+      return;
+    }
+    const ReplyToCommentData = {
+      Username: currentlyLoggedUser,
+      replyContent: replyText,
+      repliedCommentId: editingCommentId
+    };
+    // Make sure the reply text is not empty
+    if (replyText === "") {
+      toast.warning("Reply cannot be empty");
+      return;
+    }
+
+    console.log("ReplyToCommentData", ReplyToCommentData);
+    try {
+      const response = await axios.post("http://localhost:5100/Api/Comments/postReply", ReplyToCommentData)
+      console.log(response.data)
+      toast.success("Reply posted successfully")
+      console.log(`Reply submitted for comment ID ${editingCommentId}: ${replyText}`);
+    } catch (error) {
+      console.log("Error posting reply for comment", error);
+      toast.error("Failed to post reply. Please try again later.");
+    } finally {
+      // Reset the reply input field and editingCommentId
+      setReplyText('');
+      setEditingCommentId(null);
+    }
   };
 
   const replyToComment = (commentId) => {
@@ -229,7 +247,7 @@ const ShowingPosts = () => {
                                   style={{ borderStyle: "none none solid none" }}
                                 />
                                 <div onClick={handleReply} title="send" className="pt-4">
-                                  <IoSendSharp  className="text-[#5469d4]" size={20} />
+                                  <IoSendSharp className="text-[#5469d4]" size={20} />
                                 </div>
                               </div>
                             ) : null}
