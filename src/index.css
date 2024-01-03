@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.root{
+  background-color: #142030;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.navbar{
+  background-color: #142030;
+}
+.bacg{
+  background-color: rgba(79, 79, 77, 0.3);
+}
+img{
+  object-fit: cover;
+}
+
+.active{
+  padding: 6px 20px 8px 20px;
+  border-radius: 7px;
+  border-bottom: 2px solid #5469d4;
+  color : white;
+}
+.active:hover{
+  color: white!important;
+}
+  .invaCr{
+    border: 2px solid red;
+  }
+  .social{
+    background-color : #085BC3;
+    display : flex;
+    align-items :center;
+    justify-content : space-between;
+    padding : 5px 10px;
+  }
+  .twit{
+    background-color : #1A8CD8;
+    display : flex;
+    align-items :center;
+    justify-content : space-between;
+    padding : 5px 10px;
+  }
+  .youtube{
+    background-color : #FF0000;
+    display : flex;
+    align-items :center;
+    justify-content : space-between;
+    padding : 5px 10px;
+  }
+  .linkedin{
+    background-color : #0A66C2;
+    display : flex;
+    align-items :center;
+    justify-content : space-between;
+    padding : 5px 10px;
+  }
+  .likes{
+    border-left : 1px solid whitesmoke;
+    border-right : 1px solid whitesmoke;
+    padding : 0 30px ; 
+  }
+
+/* Add this CSS to your styles */
+.scrollbar-style {
+  scrollbar-width: thin;
+  scrollbar-color: #5469d4 #f0f0f0;
+}
+
+.scrollbar-style::-webkit-scrollbar {
+  width: 8px;
+  height : 5px!important;
+  border-radius: 5px!important;
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb {
+  background-color: #5469d4;
+}
+
+.scrollbar-style::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
