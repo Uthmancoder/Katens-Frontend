@@ -11,15 +11,14 @@ import Loading from './Loading';
 const HeroSection = () => {
     const [AllComments, setAllComments] = useState([]);
     const [latestPost, setLatestPost] = useState(null);
-    const [error, setError] = useState("");
     const [selectedTab, setSelectedTab] = useState(0);
 
 
-    const { data, error } = useFetch("https://ultimate-app.onrender.com/Api/GetAllPost")
+    const { data, error } = useFetch("http://localhost:5100/Api/GetAllPost")
     // console.log("data : ", data, "error :", error);
 
     useEffect(() => {
-        fetch("https://ultimate-app.onrender.com/Api/Comments/allComments")
+        fetch("http://localhost:5100/Api/Comments/allComments")
           .then(res => res.json())
           .then(data => {
             const allComments = data.allComments;
@@ -28,7 +27,7 @@ const HeroSection = () => {
           })
           .catch(error => {
             // console.error("Error fetching comments:", error);
-           setError(error.message)
+            // Handle the error as needed
           });
       }, []);
 

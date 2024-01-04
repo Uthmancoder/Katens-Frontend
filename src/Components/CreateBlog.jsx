@@ -88,7 +88,7 @@ const CreateBlog = () => {
         }
         console.log("PostData : ", PostData);
         try {
-            const response = await axios.post("https://ultimate-app.onrender.com/Api/CreatePost", PostData)
+            const response = await axios.post("http://localhost:5100/Api/CreatePost", PostData)
             console.log(response.data)
             toast.success(response.data.message)
             setTimeout(() => {

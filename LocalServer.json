@@ -1,0 +1,76 @@
+{
+    "AllProducts" : [
+        {
+          "productImg" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNnUUIExDAHpSp_sn2IJV_E7Qiiprw4SYlFA&usqp=CAU",
+          "Category" : "Women's Foot-Wear",
+          "ProductName" : "Court Heels",
+          "ProductPrice" : "9,000"
+        },
+        {
+          "productImg" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRAh6z4TvZFzLxGFdLdzCbZ_yOSfyQ_wBvXjFa7uMAaw__mgSQYa_jw7esEJNqR1fVgxU&usqp=CAU",
+          "Category" : "Women's Foot-Wear",
+          "ProductName" : "Court Heels",
+          "ProductPrice" : "3,000"
+        },
+        {
+          "productImg" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmHQOf9bwalKgghFcHVxDWmMITqyF6ufKl8g&usqp=CAU",
+          "Category" : "Women's Foot-Wear",
+          "ProductName" : "Court Heels",
+          "ProductPrice" : "25,000"
+        },
+        {
+          "productImg" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBi1ADv6wjJO8gQhSqNab_t716eiozWBLyg&usqp=CAU",
+          "Category" : "Women's Foot-Wear",
+          "ProductName" : "Court Heels",
+          "ProductPrice" : "5,000"
+        },
+        {
+          "productImg" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtwB1lIhb8U1AJceZQ-iwirYx1fd5EGtnHyg&usqp=CAU",
+          "Category" : "Women's Foot-Wear",
+          "ProductName" : "Court Heels",
+          "ProductPrice" : "9,000"
+        },
+        {
+          "productImg" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNnUUIExDAHpSp_sn2IJV_E7Qiiprw4SYlFA&usqp=CAU",
+          "Category" : "Women's Foot-Wear",
+          "ProductName" : "Court Heels",
+          "ProductPrice" : "10,000"
+        },
+        {
+          "productImg" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNnUUIExDAHpSp_sn2IJV_E7Qiiprw4SYlFA&usqp=CAU",
+          "Category" : "Women's Foot-Wear",
+          "ProductName" : "Court Heels",
+          "ProductPrice" : "8,000"
+        },
+        {
+          "productImg" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX--87HfEvHrE8MePmG3bDkrXG1WkN9MvTNA&usqp=CAU",
+          "Category" : "Women's Foot-Wear",
+          "ProductName" : "Court Heels",
+          "ProductPrice" : "5,000"
+        },
+        {
+          "productImg" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXuE78Q3s85akkpR6DAoZZjke-29imBVwPA&usqp=CAU",
+          "Category" : "Women's Foot-Wear",
+          "ProductName" : "Court Heels",
+          "ProductPrice" : "15,000"
+        },
+        {
+          "productImg" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD0Dd-LYZgacotyYR9NIsRqy4et9RCfWZ4Ug&usqp=CAU",
+          "Category" : "Women's Foot-Wear",
+          "ProductName" : "Court Heels",
+          "ProductPrice" : "5,000"
+        },
+        {
+          "productImg" : "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/94/4060201/1.jpg?4069",
+          "Category" : "Men's Foot-Wear",
+          "ProductName" : "Half Shoe",
+          "ProductPrice" : "45,000"
+        },
+        {
+            "productImg" : "https://i0.wp.com/komback.com/wp-content/uploads/2023/10/Shoes-Men.jpg?fit=1266%2C1229&ssl=1",
+            "Category" : "Men's Foot-Wear",
+            "ProductName" : "Loubotin Boot",
+            "ProductPrice" : "95,000"
+          }
+      ]
+}
