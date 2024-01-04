@@ -14,10 +14,10 @@ import EditorsPick from "../../Containers/EditorsPick"
 const Posts = () => {
     const [AllComments, setAllComments] = useState([]);
     const [RelevantStories, setRelevantStories] = useState(null);
-    const { data, error } = useFetch("http://localhost:5100/Api/GetAllPost")
+    const { data, error } = useFetch("https://ultimate-app.onrender.com/Api/GetAllPost")
 
     useEffect(() => {
-        fetch("http://localhost:5100/Api/Comments/allComments")
+        fetch("https://ultimate-app.onrender.com/Api/Comments/allComments")
             .then(res => res.json())
             .then(data => {
                 const allComments = data.allComments;
