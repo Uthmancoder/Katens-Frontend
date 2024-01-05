@@ -40,7 +40,7 @@ const ShowingPosts = () => {
 
   // Get all comments
   useEffect(() => {
-    fetch(`http://localhost:5100/Api/Comments/allComments/${id}`)
+    fetch(`https://katens-blog-backend.onrender.com/Api/Comments/allComments/${id}`)
       .then(res => res.json())
       .then(data => {
         const allComments = data.comments;
@@ -109,7 +109,7 @@ const ShowingPosts = () => {
   };
 
   // Posting endpoint
-  const postEndpoint = `http://localhost:5100/Api/Comments/postComment`;
+  const postEndpoint = `https://katens-blog-backend.onrender.com/Api/Comments/postComment`;
 
   // Posting comments
   const handlePostComment = async () => {
@@ -151,7 +151,7 @@ const ShowingPosts = () => {
 
     console.log("ReplyToCommentData", ReplyToCommentData);
     try {
-      const response = await axios.post("http://localhost:5100/Api/Comments/postReply", ReplyToCommentData)
+      const response = await axios.post("https://katens-blog-backend.onrender.com/Api/Comments/postReply", ReplyToCommentData)
       console.log(response.data)
       toast.success("Reply posted successfully")
     } catch (error) {

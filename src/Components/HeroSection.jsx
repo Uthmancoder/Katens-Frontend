@@ -14,11 +14,11 @@ const HeroSection = () => {
     const [selectedTab, setSelectedTab] = useState(0);
 
 
-    const { data, error } = useFetch("http://localhost:5100/Api/GetAllPost")
+    const { data, error } = useFetch("https://katens-blog-backend.onrender.com/Api/GetAllPost")
     // console.log("data : ", data, "error :", error);
 
     useEffect(() => {
-        fetch("http://localhost:5100/Api/Comments/allComments")
+        fetch("https://katens-blog-backend.onrender.com/Api/Comments/allComments")
           .then(res => res.json())
           .then(data => {
             const allComments = data.allComments;
